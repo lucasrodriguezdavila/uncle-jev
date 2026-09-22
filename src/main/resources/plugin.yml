@@ -1,0 +1,11 @@
+name: uncle-jev
+version: '${project.version}'
+main: org.lamesachica.unclejev.Uncle_jev
+api-version: '1.21'
+commands:
+  jev:
+    usage: /jev unmute <player>
+    permission: unclejev.staff
+permissions:
+  unclejev.staff:
+    default: op

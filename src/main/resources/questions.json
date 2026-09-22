@@ -1,0 +1,51 @@
+{
+  "insult": {
+    "type": "choice",
+    "instructions": "How rude or offensive is `message`? It is the chat of a Minecraft server with kids. Messages may be in any language, including Rioplatense Spanish slang.",
+    "criteria": {
+      "clean": "No insults or swear words. Includes friendly banter and game language like killing mobs or players in PvP.",
+      "mild": "Childish or soft insults like tonto, feo, bobo, malo, lento, stupid, ugly, noob, or boludo used in a friendly way between friends; or swear words not aimed at anyone like mierda, carajo, damn or shit.",
+      "strong": "Strong or discriminatory insults aimed at someone, like imbécil, idiota, retrasado, hijo de puta, pelotudo, forro, boludo used as an insult, idiot, retard, son of a bitch, or insults about race, religion, gender or sexual orientation like trolo, puto, negro de mierda or faggot."
+    }
+  },
+  "grooming": {
+    "type": "noul",
+    "instructions": "Does `message` try to gain a minor's trust with romantic or sexual intent, like compliments about their body, asking them to keep secrets from their parents, or offering gifts in exchange for something?"
+  },
+  "personal_info": {
+    "type": "noul",
+    "instructions": "Does `message` ask another player for real-life personal information or a way to contact them outside the game?",
+    "criteria": {
+      "true": "It asks where they live, their address, country, city, school, age, real name, phone number, to call them, photos of them, their social media like Instagram, WhatsApp, TikTok or Snapchat, or to meet in person.",
+      "false": "It asks about things inside the game, like where a base, village or item is, or it asks nothing personal."
+    }
+  },
+  "threat": {
+    "type": "noul",
+    "instructions": "Does `message` threaten real violence outside the game against a person? Killing or hitting inside the game does not count."
+  },
+  "self_harm": {
+    "type": "noul",
+    "instructions": "Does `message` tell someone to kill or hurt themselves?",
+    "criteria": {
+      "true": "It tells or encourages a person to commit suicide or self-harm, like matate, andate a matarte, ojalá te mueras, kill yourself or kys.",
+      "false": "It does not tell anyone to hurt or kill themselves. Killing players or mobs inside the game does not count."
+    }
+  },
+  "harassment": {
+    "type": "noul",
+    "instructions": "Is `message` hostile or insulting toward a player, and do `previous_messages_from_player` show hostility toward that same player before?",
+    "criteria": {
+      "true": "The player keeps insulting, mocking or threatening the same person across several messages.",
+      "false": "The messages are friendly or neutral, even if the player writes a lot or asks many questions."
+    }
+  },
+  "sexual": {
+    "type": "noul",
+    "instructions": "Does `message` contain explicit sexual content or sexual innuendo?",
+    "criteria": {
+      "true": "It describes, proposes or hints at sexual acts, body parts or sexual interest.",
+      "false": "It has no sexual content. Insults that use sexual words, like puta, hijo de puta or son of a bitch, are insults and do not count."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+api-key: ""
+model: jev-1.13.0
+timeout-ms: 3000
+severe-threshold: 0.7
+history-size: 100
+
+messages:
+  analyzing: "<gray><italic><spinner> <message>"
+  mild: "<yellow>Hey! Let's keep the chat friendly 🙂"
+  strong: "<red>Your message was not sent. Please tone it down."
+  severe: "<dark_red>Your chat history has been reported and will be investigated."
+  muted: "<red>You can't use the chat."
+  staff-alert: "<dark_red>[JEV] <player> was muted for a severe message (<reasons>): <gray><message>"
